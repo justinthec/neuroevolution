@@ -25,6 +25,15 @@ class NeuralNetwork {
         this._weights1.randomWeights();
     }
 
+    get genome() {
+        return [
+            this._bias0.data,
+            this._weights0.data,
+            this._bias1.data,
+            this._weights1.data,
+        ];
+    }
+
     get inputs() {
         return this._inputs;
     }
